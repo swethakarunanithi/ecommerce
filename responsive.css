@@ -1,0 +1,74 @@
+/* responsive */
+@media (max-width:1024px) {
+ .about-section .about-us{
+    flex-direction: column;
+ }
+ .about-section .about-us .left img{
+    height: auto ;
+ }
+}
+@media (max-width:768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* background-color: skyblue; */
+    }
+    .nav-wrapper{
+        position: fixed;
+        top: 0;
+        right: 0;   
+        width: 80%;
+        /* background-color: skyblue;
+        height: 100vh; */
+        transform: translateX(100%);
+    }
+    
+    /* .nav-links{
+        flex-direction:column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .nav-links a{
+        color: black;
+        display: block;
+        padding: 20px 0;
+    } */
+    .hero-section{
+        height: 75vh;
+    }
+    .poster-section .poster-container{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .poster-section .poster-container .poster-right img{
+        height: 350px;
+    }
+    .contact-section .contact-container{
+        flex-direction: column-reverse;
+    }
+    .product-section .product-container {
+        flex-direction: column;
+    }
+}
+@media (max-width:600px) {
+    .hero-section .hero-content h1,.poster-section .poster-container p:first-of-type{
+        font-size: 2.3rem;
+    }
+     .header h1 {
+        font-size: 1.5rem;
+
+    } 
+ .product-gallery{
+  grid-template-columns:  repeat(1,1fr);
+}
+.product-gallery .gallery-item img{
+    height: 150px;
+}
+.hero-general header h1{
+    font-size: 2rem;
+}
+
+} 
+
